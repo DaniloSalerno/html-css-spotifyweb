@@ -28,6 +28,23 @@ img {
 a {
     text-decoration: none;
 }
+
+main {
+    background-color: var(--sp-primary);
+}
+
+footer {
+    background-color: var(--sp-dark);
+}
+
+h2, h5 {
+    color: var(--sp-white);
+}
+
+h5 {
+    font-size: 1rem;
+    padding: 0.75rem 0;
+}
 /* #endregion common */
 
 
@@ -63,6 +80,7 @@ aside, .main_container {
 aside {
     height: 100%;
     width: 220px;
+    background-color: var(--sp-black);
 }
 /* /aside */
 
@@ -71,6 +89,23 @@ aside {
 .filter {
     font-size: 0.75rem;
 }
+
+.filter li {
+    padding-top: 1rem;
+    position: relative;
+}
+
+.filter li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: var(--sp-success);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* /nav */
 
 .main_container {
@@ -78,6 +113,15 @@ aside {
     height: 100%;
     width: calc(100% - 220px);
 }
+
+.main_container .caption > div, .suggestion, .filter {
+    color: var(--sp-light);
+}
+
+.main_container .caption > div, .suggestion {
+    font-size: 0.75rem;
+}
+
 
 /* #popular */
 #popular .container_cover img {
@@ -274,5 +318,10 @@ footer {
     background-color: red;
 }
 
+.debug footer > div {
+    background-color: red;
+    min-height: 50px;
+    min-width: 100px;
+}
 /* #endregion debug */
 
