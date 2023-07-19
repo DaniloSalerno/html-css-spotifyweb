@@ -6,4 +6,117 @@
     box-sizing: border-box;
 }
 
+:root {
+    --sp-black: rgb(0, 0, 0);
+    --sp-white: rgb(255, 255, 255);
+    --sp-primary: rgb(20, 25, 34);
+    --sp-dark: rgb(40, 40, 40);
+    --sp-light: rgb(163, 163, 163);
+    --sp-bar-dark: rgb(90, 90, 90);
+    --sp-bar-light: rgb(193, 193, 193);
+    --sp-success: rgb(173, 255, 47);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 /* #endregion common */
+
+
+
+
+
+/* #region main */
+
+main {
+    height: calc(100vh - 100px);
+}
+
+.upgrade_banner {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/* aside */
+aside {
+    height: 100%;
+    width: 230px;
+}
+/* /aside */
+
+/* main_container */
+.main_container {
+    height: 100%;
+    width: calc(100% - 230px);
+}
+/* /main_container */
+
+
+/* #endregion main */
+
+
+
+
+
+/* #region footer */
+
+footer {
+    height: 100px;
+}
+
+
+/* #endregion footer */
+
+
+
+
+
+/* #region utilities */
+
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+.d_col {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+/* /flex */
+
+
+/* #endregion utilities */
+
+
+/* #region debug */
+
+.debug main {
+    background-color: red;
+}
+
+
+.debug aside {
+    background-color: blue;
+}
+
+.debug .main_container {
+    background-color: aqua;
+}
+
+.debug footer {
+    background-color: black;
+}
+
+.debug .aside_top, .debug .aside_bottom {
+    min-height: 200px;
+    background-color: lime;
+}
+/* #endregion debug */
+
