@@ -93,6 +93,12 @@ aside {
 .filter li {
     padding-top: 1rem;
     position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter li:hover {
+    color: white;
 }
 
 .filter li.active::after {
@@ -120,6 +126,11 @@ aside {
 
 .main_container .caption > div, .suggestion {
     font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.suggestion {
+    padding: 1rem 0;
 }
 
 
@@ -218,6 +229,18 @@ footer {
     border-radius: 1.5rem;
 }
 
+.btn-dark {
+    background-color: var(--sp-black);
+    color: var(--sp-white);
+    border: 1px solid var(--sp-white);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.btn-dark:hover {
+    font-size: 0.9rem;
+}
 
 /* /btns */
 
