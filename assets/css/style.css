@@ -24,6 +24,10 @@ body {
 img {
     max-width: 100%;
 }
+
+a {
+    text-decoration: none;
+}
 /* #endregion common */
 
 
@@ -39,12 +43,18 @@ main {
 .upgrade_banner {
     width: calc(100% - 220px);
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
     position: fixed;
     top: 0;
     right: 0;
+    justify-content: flex-end;
 }
+
+.upgrade_container {
+    padding: 0 1rem;
+}
+
 
 aside, .main_container {
     overflow-y: auto;
@@ -68,6 +78,15 @@ aside {
     height: 100%;
     width: calc(100% - 220px);
 }
+
+/* #popular */
+#popular .container_cover img {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+
+}
+/* /#popular */
+
 /* /main_container */
 
 
@@ -148,6 +167,16 @@ footer {
     padding: 1rem;
 }
 /* /spacing */
+
+/* btns */
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+
+/* /btns */
+
 
 /* #endregion utilities */
 
@@ -233,12 +262,16 @@ footer {
 }
 
 .debug .aside_top, .debug .aside_bottom {
-    min-height: 200px;
+    min-height: 100px;
     background-color: lime;
 }
 
 .debug #recent [class^="col-"] {
     background-color: yellow;
+}
+
+.debug .btn {
+    background-color: red;
 }
 
 /* #endregion debug */
