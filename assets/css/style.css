@@ -133,14 +133,47 @@ aside {
     padding: 1rem 0;
 }
 
-
-/* #popular */
 #popular .container_cover img {
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-
 }
-/* /#popular */
+
+.container_cover {
+    position: relative;
+}
+
+.container_cover > .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container_cover.circle_img > .icon {
+    border-radius: 50%;
+}
+
+.container_cover:hover .icon{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.container_cover:hover i{
+    display: block;
+}
+
+.container_cover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    display: none;
+}
+
 
 /* /main_container */
 
