@@ -425,7 +425,7 @@ footer {
 /* #region media query */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
     .col-md-3 {
         width: calc(100% / 12 * 3);
@@ -433,14 +433,14 @@ footer {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .col-sm-6 {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 576px) {
     aside.width-sm {
         width: 50px;
     }
