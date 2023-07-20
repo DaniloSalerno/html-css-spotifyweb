@@ -317,6 +317,34 @@ aside .create_playlist:hover .plus {
 
 footer {
     height: 100px;
+    color: var(--sp-white);
+}
+
+.container_current {
+    height: 100%;
+    padding: 1rem 0.5rem;
+}
+
+.song_current img {
+    width: 70px;
+}
+
+.details_song {
+    padding-left: 0.5rem;
+}
+
+.details_song h5 {
+    padding: 0;
+}
+
+.options_current {
+    color: var(--sp-light);
+}
+
+.name_song {
+    color: var(--sp-light);
+    font-size: 0.65rem;
+    font-weight: bold;
 }
 
 
@@ -351,6 +379,10 @@ footer {
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.f-d-column {
+    flex-direction: column;
 }
 
 .gap-1 {
@@ -435,9 +467,14 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .col-sm-6 {
+    .col-md-6 {
         width: 50%;
     }
+
+    .song_current.size-md img {
+        width: 60px;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -472,6 +509,10 @@ footer {
 
     .artist.size-sm {
         justify-content: center;
+    }
+
+    .song_current.size-sm img {
+        width: 50px;
     }
 
    
