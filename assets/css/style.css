@@ -138,9 +138,6 @@ aside .logo img.small_logo {
 
 .playlist {
     padding: 1rem 0 1rem 1rem;
-    
-    height: 250px;
-    overflow-y: auto;
 }
 
 .playlist h4 {
@@ -163,6 +160,12 @@ aside .logo img.small_logo {
     padding-top: 1rem;
 }
 
+.playlist ul {
+    
+    
+    height: 200px;
+    overflow-y: auto;
+}
 .aside_bottom {
     padding: 0 1rem;
     font-size: 0.75rem;
