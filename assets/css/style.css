@@ -93,6 +93,8 @@ aside {
     height: 100%;
     width: 220px;
     background-color: var(--sp-black);
+    
+    font-weight: bold;
 }
 
 aside .logo {
@@ -112,11 +114,23 @@ aside .logo img.small_logo {
 .aside_top {
     color: var(--sp-light);
     overflow-y: auto;
+    font-size: 0.75rem;
 }
 
 .navigations .row {
-    padding: 0 0 1rem 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
 }
+
+.navigations .row.active {
+    border-left: 1px solid var(--sp-success);
+    color: var(--sp-white);
+}
+
+.navigations .row.active img {
+    filter: none;
+}
+
 .icon_label img {
     width: 25px;
     height: 100%;
@@ -149,7 +163,7 @@ aside .logo img.small_logo {
 
 .aside_bottom {
     padding: 0 1rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 .install {
@@ -176,6 +190,15 @@ aside .logo img.small_logo {
 .artist_avatar img {
     object-fit: cover;
     width: 60%;
+}
+
+aside .label:hover, aside .create_playlist:hover, aside li:hover, .install:hover {
+    cursor: pointer;
+    color: var(--sp-white);
+}
+
+aside .create_playlist:hover .plus {
+    background-color: var(--sp-white);
 }
 
 /* /aside */
@@ -447,10 +470,6 @@ footer {
 
     .artist.size-sm {
         justify-content: center;
-    }
-
-    .artist.size-sm .artist_avatar img{
-        width: 60%;
     }
 
    
