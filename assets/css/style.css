@@ -382,6 +382,7 @@ footer button {
     height: 6px;
     width: 50%;
     margin: auto;
+    border-radius: 0.25rem;
     background-color: grey;
     cursor: pointer;
 }
@@ -391,6 +392,7 @@ footer button {
     left: 0;
     height: 6px;
     width: 40%;
+    border-radius: 0.25rem;
     background-color: white;
     cursor: pointer;
 }
