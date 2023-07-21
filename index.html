@@ -480,7 +480,7 @@
 
                         <div class="details_song d-flex f-d-column justify-center">
                             <h5>Sinister</h5>
-                            <div class="name_song">Brano Nome</div>
+                            <a href="#" class="name_song">Brano Nome</a>
                         </div>
                     </div>
 
@@ -501,26 +501,26 @@
 
             <div class="controls">
 
-                <div class="controls_top d-flex justify-center align-items-center gap-2">
+                <div class="controls_top d-flex justify-center align-items-center gap-4 gap-3-sm">
                     
                     <button>
-                        <i class="fa-solid fa-shuffle fa-xl"></i>
+                        <i class="fa-solid fa-shuffle"></i>
                     </button>
 
                     <button>
-                        <i class="fa-solid fa-backward-step fa-xl"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+
+                    <button class="play">
+                        <i class="fa-regular fa-circle-play"></i>
                     </button>
 
                     <button>
-                        <i class="fa-regular fa-circle-play fa-xl"></i>
+                        <i class="fa-solid fa-forward-step"></i>
                     </button>
 
                     <button>
-                        <i class="fa-solid fa-forward-step fa-xl"></i>
-                    </button>
-
-                    <button>
-                        <i class="fa-solid fa-rotate-right fa-xl"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
                     </button>
 
                 </div>
@@ -529,9 +529,17 @@
                 
                 <div class="controls_bottom d-flex justify-center align-items-center">
 
+                    <span class="current_time">
+                        1:40
+                    </span>
+
                     <div class="bar">
                         <div class="advancement"></div>
                     </div>
+
+                    <span class="total_time">
+                        4:10
+                    </span>
 
                 </div>
                 <!-- /.controls_bottom -->
@@ -539,12 +547,24 @@
             </div>
             <!-- /.controls -->
 
-            <div class="volume d-flex align-items-center">
+            <div class="volume d-flex align-items-center gap-1">
+
                 <div class="d-flex gap-2">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+
+                    <button>
+                        <i class="fa-solid fa-list-ul"></i>
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-display"></i>
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+
                 </div>
+
                 <div class="bar">
                     <div class="advancement"></div>
                 </div>

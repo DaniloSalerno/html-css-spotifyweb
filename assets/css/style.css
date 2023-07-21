@@ -62,7 +62,7 @@ main {
 }
 
 .upgrade_banner {
-    width: calc(100% - 220px);
+    width: calc(100% - 200px);
     height: 70px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
@@ -73,7 +73,7 @@ main {
 }
 
 .upgrade_banner:hover {
-    width: calc(100% - 236px);
+    width: calc(100% - 216px);
     right: 1rem;
 }
 
@@ -92,9 +92,11 @@ main {
 /* aside */
 aside {
     height: 100%;
-    width: 220px;
+    width: 200px;
     background-color: var(--sp-black);
     font-weight: bold;
+    
+    overflow: auto;
 }
 
 aside .logo {
@@ -114,7 +116,6 @@ aside .logo img.small_logo {
 .aside_top {
     color: var(--sp-light);
     font-size: 0.75rem;
-    overflow: auto;
 }
 
 .navigations .row {
@@ -243,7 +244,7 @@ aside .create_playlist:hover .plus {
 .main_container {
     padding-top: 70px;
     height: 100%;
-    width: calc(100% - 220px);
+    width: calc(100% - 200px);
 }
 
 .main_container .row {
@@ -324,14 +325,14 @@ footer {
     color: var(--sp-white);
 }
 
-.container_current {
+.container_current, .volume {
     height: 100%;
-    width: 220px;
+    width: 200px;
     padding: 1rem 0.5rem;
 }
 
 .song_current img {
-    width: 70px;
+    width: 65px;
 }
 
 .details_song {
@@ -346,10 +347,19 @@ footer {
     color: var(--sp-light);
 }
 
+.options_current i:hover {
+    color: var(--sp-white);
+    cursor: pointer;
+}
+
 .name_song {
     color: var(--sp-light);
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: bold;
+}
+
+.name_song:hover {
+    text-decoration: underline;
 }
 
 footer button {
@@ -359,61 +369,74 @@ footer button {
     cursor: pointer;
 }
 
+.controls button {
+    font-size: 1rem;
+    color: var(--sp-bar-light);
+}
+
+.controls button:hover {
+    color: var(--sp-white);
+}
+
+.controls button.play {
+    font-size: 2rem;
+}
+
+
 .controls {
-    width: calc(100% - 440px);
+    width: calc(100% - 400px);
 }
 
-.controls_top, .controls_bottom {
-    height: 50%;
-}
-
-.volume {
-    width: 220px;
-    height: 100%;
-}
 
 .controls_bottom {
     width: 100%;
     height: 50px;
 }
 
+
+.volume button {
+    font-size: 0.75rem;
+}
+
+
 .bar {
     position: relative;
-    height: 6px;
-    width: 50%;
-    margin: auto;
+    height: 4px;
+    width: 60%;
     border-radius: 0.25rem;
-    background-color: grey;
+    background-color: var(--sp-bar-dark);
     cursor: pointer;
 }
 .advancement {
     position: absolute;
     top: 0;
     left: 0;
-    height: 6px;
+    height: 4px;
     width: 40%;
     border-radius: 0.25rem;
-    background-color: white;
+    background-color: var(--sp-bar-light);
     cursor: pointer;
 }
 .bar:hover .advancement {
-    background-color: lime;
+    background-color: var(--sp-success);
 }
 .bar:hover .advancement::after {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     position: absolute;
     top: 0;
-    transform: translateY(-7px);
-    right: -10px;
-    background-color: lime;
+    transform: translateY(-5px);
+    right: -7px;
+    background-color: var(--sp-bar-light);
 } 
 
-
-
+.current_time, .total_time {
+    padding: 0 1rem;
+    font-size: 0.75rem;
+}
 
 
 
@@ -460,6 +483,10 @@ footer button {
 
 .gap-2 {
     gap: 1rem;
+}
+
+.gap-4 {
+    gap: 2rem;
 }
 
 .row {
@@ -583,6 +610,35 @@ footer button {
     .song_current.size-sm img {
         width: 50px;
     }
+    
+    .controls {
+        width: calc(100% - 300px);
+    }    
+
+    .container_current, .volume {
+        width: 150px;
+    }
+    
+    .controls button {
+        font-size: 0.75rem;
+    }
+
+    .controls button.play {
+        font-size: 1.5rem;
+    }
+
+    .gap-3-sm {
+        gap: 1.5rem;
+    }
+
+    .bar {
+        width: 80%;
+    }
+
+    .current_time, .total_time {
+        padding: 0 0.25rem;
+    }
+
 
    
 }
